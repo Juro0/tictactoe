@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+
+    /* COLORS */
+    --clr-purple: #5f27cd;
+    --clr-red: #ff6b6b;
+    --clr-blue: #2e86de;
+    --clr-white: #ffeeff;
+
+    /* FONTS */
+    --fnt-poppins: 'Poppins', sans-serif;
+    --fnt-mont: 'Montserrat', sans-serif;
+
+    /* WEIGHT */
+    --wgt-black: 700;
+    --wgt-bold: 600;
+    --wgt-semi: 500;
+    --wgt-medium: 400;
+
+}
+
+/* GENERAL */
+
+html, body {
+    scroll-behavior: smooth;
+    background-color: var(--clr-purple);
+    font-family: var(--fnt-poppins);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* BODY */
+
+body {
+    text-align: center;
+}
+
+/* TITLE */
+
+.title {
+    font-family: var(--fnt-mont);
+    color: var(--clr-white);
+    font-weight: var(--wgt-bold);
+    margin: 7vh 0;
+    font-size: 2rem;
+}
+
+/* POINTS */
+
+.points {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--clr-white);
+}
+
+#x { color: var(--clr-red);}
+
+#o { color: var(--clr-blue)}
+
+.points-x {
+    margin-right: 5vw;
+}
+
+/* GAME */
+
+.game {
+    transition: all ease .5s;
+    margin: 5vh 0 4vh;
+    opacity: 1;
+}
+
+.ended {
+    transition: all ease .5s;
+    opacity: .7;
+    transform: scale(95%);
+}
+
+input {
+    width: 9vh;
+    height: 9vh;
+    border-radius: 1rem;
+    border: none;
+    margin: 1vw;
+    font-size: 1.5rem;
+    font-weight: var(--wgt-black);
+    font-family: var(--fnt-poppins);
+}
+
+.x-marked {
+    color: var(--clr-red);
+}
+
+.o-marked {
+    color: var(--clr-blue);
+}
+
+/* TEXT */
+
+.text {
+    color: var(--clr-white);
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+}
+
+/* BTNS */
+
+.btns {
+    margin-top: 4vh;
+}
+
+.btns > * {
+    margin: 0 .3rem;
+}
+
+.reset, .newgame {
+    background-color: #ffeeff;
+    border: none;
+    color: var(--clr-purple);
+    font-weight: var(--wgt-bold);
+    padding: .8rem 1.6rem;
+    border-radius: .4rem;
+}

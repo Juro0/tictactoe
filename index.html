@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>tictactoe &bull; juro</title>
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/300px-Tic_tac_toe.svg.png" type="image/x-icon">
+    
+        <link rel="stylesheet" href="assets/css/style-lg.css" media="screen and (min-width: 769px)">
+        <link rel="stylesheet" href="assets/css/style-sm.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    </head>
+
+    <body>
+        
+        <p class="title">TIC TAC TOE</p>
+
+        <span class="points">
+            <p class="points-x">Points X: <b id="x">0</b></p>
+            <p class="points-o">Points O: <b id="o">0</b></p>
+        </span>
+
+        <div class="game">
+            <input type="button" class="cell" id="1" value=" ">
+            <input type="button" class="cell" id="2" value=" ">
+            <input type="button" class="cell" id="3" value=" "><br>
+            <input type="button" class="cell" id="4" value=" ">
+            <input type="button" class="cell" id="5" value=" ">
+            <input type="button" class="cell" id="6" value=" "><br>
+            <input type="button" class="cell" id="7" value=" ">
+            <input type="button" class="cell" id="8" value=" ">
+            <input type="button" class="cell" id="9" value=" ">
+        </div>
+
+        <p class="text">.</p>
+
+        <div class="btns">
+            <button class="reset">RESET</button>
+            <button class="newgame">NEW GAME</button>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/tictactoe.js"></script>
+        <script src="assets/js/listener.js"></script>
+        
+    </body>
+
+</html>
